@@ -3,24 +3,22 @@ import { Nav, NavLink, NavMenu } from "./NavbarElements";
 
 const Navbar = () => {
     return (
-        <>
-            <Nav>
-                <NavMenu>
-                    <NavLink to="/about" activeStyle>
-                        About
-                    </NavLink>
-                    <NavLink to="/contact" activeStyle>
-                        Contact Us
-                    </NavLink>
-                    <NavLink to="/blogs" activeStyle>
-                        Blogs
-                    </NavLink>
-                    <NavLink to="/sign-up" activeStyle>
-                        Sign Up
-                    </NavLink>
-                </NavMenu>
-            </Nav>
-        </>
+        <nav className="flex md:w-1/6 p-3 md:flex-col gap-2 text-right">
+            <div>
+                <NavLink to="/home" activeStyle>
+                    home
+                </NavLink>
+                <NavLink to="/about" activeStyle>
+                    about
+                </NavLink>
+                <NavLink to="/projects" activeStyle>
+                    projects
+                </NavLink>
+                <NavLink to="/resume" activeStyle>
+                    resume
+                </NavLink>
+            </div>
+        </nav>
     );
 }
 

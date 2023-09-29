@@ -1,20 +1,21 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route }
-    from 'react-router-dom';
+  from 'react-router-dom';
 import Navbar from './components/Navbar';
+import Home from './components/Home';
+import React from "react";
+import styles from "./index.css"
 
 function App() {
   return (
-    <div>
+    <div className="flex md:flex-row flex-col gap-5 justify-center w-full md:max-w-3xl mx-auto mt-[10vh] p-4">
       <Navbar />
-                  {/* <Routes>
-                      <Route exact path='/' exact element={<Home />} />
-                      <Route path='/about' element={<About />} />
-                      <Route path='/contact' element={<Contact />} />
-                      <Route path='/blogs' element={<Blogs />} />
-                      <Route path='/sign-up' element={<SignUp />} />
-                  </Routes> */}
+      <Routes>
+        <Route exact path='/' element={<Home />} />
+        {/* <Route path='/about' element={<About />} /> */}
+      </Routes>
     </div>
+
   );
 }
 

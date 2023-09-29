@@ -10,18 +10,18 @@ export const Nav = styled.nav`
   overflow-x: hidden;
   padding: 8px 0;
 `;
- 
+
 export const NavLink = styled(Link)`
-  padding: 6px 8px 6px 16px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #2196F3;
+  // padding: 6px 8px 6px 16px;
+  // text-decoration: none;
+  // font-size: 25px;
+  // color: #2196F3;
   display: block;
-  &.active {
-    color: #4d4dff;
-  }
+  // &.active {
+  //   color: #4d4dff;
+  // }
 `;
- 
+
 // export const Bars = styled(FaBars)`
 //   display: none;
 //   color: #808080;
@@ -35,6 +35,3 @@ export const NavLink = styled(Link)`
 //     cursor: pointer;
 //   }
 // `;
- 
-export const NavMenu = styled.div`
-`;
