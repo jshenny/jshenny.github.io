@@ -8,7 +8,7 @@ import styles from "./index.css"
 
 function App() {
   return (
-    <div className="flex md:flex-row flex-col gap-5 justify-center w-full md:max-w-3xl mx-auto mt-[10vh] p-4">
+    <div className="flex md:flex-row flex-col gap-5 justify-center w-full md:max-w-3xl mx-auto mt-[18vh] p-4">
       <Navbar />
       <Routes>
         <Route exact path='/' element={<Home />} />
