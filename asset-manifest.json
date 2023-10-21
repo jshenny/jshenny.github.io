@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/jshenny.github.io/static/css/main.52ae281c.css",
+    "main.js": "/jshenny.github.io/static/js/main.613df60e.js",
+    "static/js/787.4a51508e.chunk.js": "/jshenny.github.io/static/js/787.4a51508e.chunk.js",
+    "static/media/Inter-Regular.ttf": "/jshenny.github.io/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "index.html": "/jshenny.github.io/index.html",
+    "main.52ae281c.css.map": "/jshenny.github.io/static/css/main.52ae281c.css.map",
+    "main.613df60e.js.map": "/jshenny.github.io/static/js/main.613df60e.js.map",
+    "787.4a51508e.chunk.js.map": "/jshenny.github.io/static/js/787.4a51508e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.52ae281c.css",
+    "static/js/main.613df60e.js"
+  ]
+}
