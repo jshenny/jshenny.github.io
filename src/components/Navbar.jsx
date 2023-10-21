@@ -5,7 +5,7 @@ const Navbar = () => {
     return (
         <nav className="flex md:w-1/6 p-3 md:flex-col gap-2 text-right">
             <div>
-                <NavLink to="/home" activeStyle>
+                <NavLink to="/" activeStyle>
                     home
                 </NavLink>
                 <NavLink to="/about" activeStyle>
