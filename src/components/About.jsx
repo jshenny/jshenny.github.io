@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
     return (
-        <div className="md:w-4/5 p-3 body">
+        <div className="body">
         <p>hello! <br></br> <br></br>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi urna erat, auctor vel ultrices ac,
             facilisis ut sapien. Sed semper dui metus, eget scelerisque nulla cursus id. Proin sed eleifend ipsum.

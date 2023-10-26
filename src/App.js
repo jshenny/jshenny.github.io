@@ -10,13 +10,15 @@ import styles from "./index.css"
 
 function App() {
   return (
-    <div className="flex md:flex-row flex-col gap-5 justify-center w-full md:max-w-3xl mx-auto mt-[18vh] p-4">
+    <div>
       <Navbar />
-      <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/projects' element={<Projects />} />
-      </Routes>
+      <div className="flex w-full mx-auto md:max-w-3xl sm:flex sm:items-center py-32 sm:justify-between">
+        <Routes>
+          <Route path='/' element={<Home />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/projects' element={<Projects />} />
+        </Routes>
+      </div>
     </div>
 
   );
