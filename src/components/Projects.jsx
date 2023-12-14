@@ -1,4 +1,5 @@
 import React from "react";
+import StreamDesk from "../assets/images/StreamDesk.jpg"
 
 const Projects = () => {
     return (
@@ -13,9 +14,13 @@ const Projects = () => {
                         August 2023
                     </small>
                     <div className="space-y-4">
-                        <div className="grid grid-cols-3 gap-4 md:gap-8 lg:gap-12"></div>
-                        <div classNaame="col-span-3 md:col-span-2">
-                            ha hah a
+                        <div className="grid grid-cols-3 gap-4 md:gap-8 lg:gap-12">
+                            <div className="col-span-3 md:col-span-2">
+                                exploring situated information in livestreams of physical activities
+                            </div>
+                            <div className="col-span-3 md:col-span-1">
+                                <img src={StreamDesk} alt="StreamDesk image" />
+                            </div>
                         </div>
                     </div>
                 </div>
