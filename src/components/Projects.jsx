@@ -1,5 +1,6 @@
 import React from "react";
 import StreamDesk from "../assets/images/StreamDesk.jpg"
+import ProjectCard from "./ProjectCard.jsx"
 
 const Projects = () => {
     return (
@@ -25,6 +26,7 @@ const Projects = () => {
                     </div>
                 </div>
             </section>
+            <ProjectCard></ProjectCard>
         </div>
     )
 }

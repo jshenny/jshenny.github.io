@@ -1,6 +1,6 @@
 import React from "react";
 
-const ProjectCard = (projectName) => {
+const ProjectCard = () => {
     return (
         <section className="py-8" id="StreamDesk">
             <div className="">
@@ -16,7 +16,7 @@ const ProjectCard = (projectName) => {
                             exploring situated information in livestreams of physical activities
                         </div>
                         <div className="col-span-3 md:col-span-1">
-                            <img src={projectName} alt={`${projectName} image`} />
+                            <img src="../images/streamdesk.jpg" alt="StreamDesk image" />
                         </div>
                     </div>
                 </div>
