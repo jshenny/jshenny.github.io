@@ -1,51 +1,61 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "./NavbarElements";
 
 const Navbar = () => {
+    const [open, setOpen] = useState(false);
+
     return (
-        <header className="fixed left-0 top-0 h-screen w-1/5 bg-white">
+        <header className="w-full md:w-64 md:shrink-0 bg-white sticky top-0 md:h-screen z-10">
+            {/* Mobile top bar */}
+            <div className="flex items-center justify-between px-4 py-3 md:hidden">
+                <span className="text-sm font-normal tracking-wide text-gray-700">Jane Shen</span>
+                <button
+                    onClick={() => setOpen(!open)}
+                    aria-label="Toggle navigation"
+                    className="text-gray-700"
+                >
+                    {open ? "✕" : "☰"}
+                </button>
+            </div>
+
             <nav
-                className="flex h-full flex-col items-end justify-center px-[8%] text-right"
+                className={`
+                    ${open ? "flex" : "hidden"} md:flex
+                    flex-col items-end justify-center gap-4
+                    px-[8%] py-4 text-right text-sm tracking-wide
+                    md:h-full
+                `}
                 aria-label="Global"
             >
-                {/* Name */}
-                {/* <a
-                    className="mb-14 text-sm font-normal tracking-wide text-gray-700"
-                    href="/"
+                <NavLink
+                    to="/about"
+                    onClick={() => setOpen(false)}
+                    style={({ isActive }) => ({
+                        color: isActive ? "#111827" : "#9CA38F",
+                    })}
                 >
-                    Jane Shen
-                    <img src={require("../assets/images/profilePic.png")} alt="Profile Picture" className="w-25 h-25ml-2 inline-block" />
-                </a> */}
+                    about
+                </NavLink>
 
-                {/* Navigation */}
-                <div className="flex flex-col gap-4 text-sm tracking-wide">
-                    <NavLink
-                        to="/about"
-                        style={({ isActive }) => ({
-                            color: isActive ? "#111827" : "#9CA38F",
-                        })}
-                    >
-                        about
-                    </NavLink>
+                <NavLink
+                    to="/projects"
+                    onClick={() => setOpen(false)}
+                    style={({ isActive }) => ({
+                        color: isActive ? "#111827" : "#9CA38F",
+                    })}
+                >
+                    projects
+                </NavLink>
 
-                    <NavLink
-                        to="/projects"
-                        style={({ isActive }) => ({
-                            color: isActive ? "#111827" : "#9CA38F",
-                        })}
-                    >
-                        projects
-                    </NavLink>
-
-                    <NavLink
-                        to="/art"
-                        style={({ isActive }) => ({
-                            color: isActive ? "#111827" : "#9CA38F",
-                        })}
-                    >
-                        art
-                    </NavLink>
-                </div>
+                <NavLink
+                    to="/art"
+                    onClick={() => setOpen(false)}
+                    style={({ isActive }) => ({
+                        color: isActive ? "#111827" : "#9CA38F",
+                    })}
+                >
+                    art
+                </NavLink>
             </nav>
         </header>
     );

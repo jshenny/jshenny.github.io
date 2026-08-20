@@ -1,16 +1,18 @@
 import React from "react";
 import StreamDesk from "../assets/images/StreamDesk.jpg"
 import DeskBuddy from "../assets/images/DeskBuddy.jpg"
+import ProfilePic from "../assets/images/ProfilePic.png"
 import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
-        <div className="">
-            <div className="body py-28">
-                <h1 className="text-5xl">hi, i'm jane!</h1>
+        <div className="flex flex-col justify-center h-full">
+            <div className="body">
+                <img className="w-[200px] md:w-[200px] my-4" src={ProfilePic} alt="Profile Pic"/>
+                <h1 className="text-3xl">hi, i'm jane!</h1>
                 <p className="py-4">a developer, designer and artist </p>
             </div>
-            <div className="py-24">
+            {/* <div className="py-24">
                 <h1 className="text-2xl py-6">featured works</h1>
                 <div className="flex flex-row gap-2 flex-wrap justify-between">
                     <div className="flex flex-col w-[300px] md:w-[44%] mb-6">
@@ -29,7 +31,7 @@ const Home = () => {
                     </div>
                     <Link to="/projects"> see all projects → </Link>
                 </div>
-            </div>
+            </div> */}
         </div>
     )
 }
