@@ -1,30 +1,54 @@
 import React from "react";
-import { Nav, NavLink, NavMenu } from "./NavbarElements";
+import { NavLink } from "./NavbarElements";
 
 const Navbar = () => {
     return (
-        <header className="flex flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white text-md py-20">
-            <nav className="w-full mx-auto md:max-w-3xl sm:flex sm:items-center sm:justify-between" aria-label="Global">
-                <div className="flex items-center justify-between">
-                    <a className="flex-none text-xl font-semibold text-gray-600" href="/">Jane Shen</a>
-                </div>
-                <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:pl-5">
-                    <NavLink to="/about"
-                        style={({ isActive }) => ({ color: isActive ? 'black' : '#9CA38F' })}>
+        <header className="fixed left-0 top-0 h-screen w-1/5 bg-white">
+            <nav
+                className="flex h-full flex-col items-end justify-center px-[8%] text-right"
+                aria-label="Global"
+            >
+                {/* Name */}
+                {/* <a
+                    className="mb-14 text-sm font-normal tracking-wide text-gray-700"
+                    href="/"
+                >
+                    Jane Shen
+                    <img src={require("../assets/images/profilePic.png")} alt="Profile Picture" className="w-25 h-25ml-2 inline-block" />
+                </a> */}
+
+                {/* Navigation */}
+                <div className="flex flex-col gap-4 text-sm tracking-wide">
+                    <NavLink
+                        to="/about"
+                        style={({ isActive }) => ({
+                            color: isActive ? "#111827" : "#9CA38F",
+                        })}
+                    >
                         about
                     </NavLink>
-                    <NavLink to="/projects"
-                        style={({ isActive }) => ({ color: isActive ? 'black' : '#9CA38F' })}>
+
+                    <NavLink
+                        to="/projects"
+                        style={({ isActive }) => ({
+                            color: isActive ? "#111827" : "#9CA38F",
+                        })}
+                    >
                         projects
                     </NavLink>
-                    <NavLink to="/art"
-                        style={({ isActive }) => ({ color: isActive ? 'black' : '#9CA38F' })}>
+
+                    <NavLink
+                        to="/art"
+                        style={({ isActive }) => ({
+                            color: isActive ? "#111827" : "#9CA38F",
+                        })}
+                    >
                         art
                     </NavLink>
                 </div>
             </nav>
         </header>
     );
-}
+};
 
 export default Navbar;
