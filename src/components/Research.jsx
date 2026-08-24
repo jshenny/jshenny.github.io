@@ -1,32 +1,42 @@
 import React from "react";
-import ProjectCard from "./ProjectCard.jsx"
-import StreamDesk from "../assets/images/StreamDesk.jpg"
+import PublicationCard from "./PublicationCard.jsx"
+import SustainingCreativityImg from "../assets/images/SustainingCreativity.png"
+import BuildingOutDesignFictionImg from "../assets/images/BuildingOutDesignFiction.png"
+
+const publications = [
+    {
+        title: "Sustaining Creativity: Insights from Online Art Challenges",
+        authors: "Jane Shen, Lora Oehlberg",
+        description: "Exploring how online art challenges shape participation in online creative communities.",
+        image: SustainingCreativityImg, 
+        formatLabel: "Paper (PDF)",
+        formatLink: "https://dl.acm.org/doi/epdf/10.1145/3803784.3807526",
+        venue: "C&C 2026",
+    },
+    {
+        title: "Building Out Design Fiction: Designing Future Social Media Interactions for Amateur Artists",
+        authors: "Jane Shen, Lora Oehlberg",
+        description: "Using design fiction to design future social media interactions for amateur artists",
+        image: BuildingOutDesignFictionImg,
+        formatLabel: "Poster (PDF)",
+        formatLink: "https://drive.google.com/file/d/130NmldLtab8w8qlHzcMPkvpMs8NG8QAI/view?usp=sharing",
+        venue: "GI 2025",
+    },
+];
 
 const Research = () => {
     return (
-        <div className="md:w-4/5 p-3 body">
-            {/* <p>My little collection of projects!</p> */}
-            <section className="py-8" id="StreamDesk">
-                <div className="">
-                    <h3 className="text-black text-xl font-semibold mb-1">
-                        <span class="mr-1">StreamDesk</span>
-                    </h3>
-                    <small className="whitespace-nowrap text-neutral-500 text-base font-normal">
-                        August 2023
-                    </small>
-                    <div className="space-y-4">
-                        <div className="grid grid-cols-3 gap-4 md:gap-8 lg:gap-12">
-                            <div className="col-span-3 md:col-span-2">
-                                exploring situated information in livestreams of physical activities
-                            </div>
-                            <div className="col-span-3 md:col-span-1">
-                                <img src={StreamDesk} alt="StreamDesk image" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <ProjectCard></ProjectCard>
+        <div className="max-w-2xl mx-auto px-6 pt-8">
+            <h2 className="text-xl font-bold text-black mb-4">Publications</h2>
+            <p className="text-sm text-gray-800 mb-6">
+                See my full CV <a href="#" className="underline">here!</a>
+            </p>
+
+            <div className="space-y-10">
+                {publications.map((pub, i) => (
+                    <PublicationCard key={i} {...pub} />
+                ))}
+            </div>
         </div>
     )
 }
