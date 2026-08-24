@@ -1,32 +1,51 @@
 import React from "react";
-import StreamDesk from "../assets/images/StreamDesk.jpg"
 import ProjectCard from "./ProjectCard.jsx"
+import StreamDesk from "../assets/images/StreamDesk.jpg"
+import DeskBuddy from "../assets/images/DeskBuddy.jpg"
+import StreamProjections from "../assets/images/StreamProjections.png"
+import SupportingMentalHealth from "../assets/images/SupportingMentalHealth.png"
+
+const projects = [
+    {
+        title: "StreamProjections",
+        date: "apr 2024",
+        description: "Examining online coworking livestreams as virtual alternatives to shared study spaces",
+        image: StreamProjections,
+        detailsLink: "https://drive.google.com/file/d/1vMpdiNoccNzKL-ALW238poJsmOPIFIOF/view?usp=sharing",
+    },
+    {
+        title: "StreamDesk",
+        date: "aug 2023",
+        description: "Exploring situated information in livestreams of physical activities",
+        image: StreamDesk,
+        detailsLink: "https://drive.google.com/file/d/1815vhHLaX0WXGXFSFcAqq95KKtZl1_8M/view?usp=sharing",
+    },
+    {
+        title: "Desk Buddy",
+        date: "april 2023",
+        description: "A friendly buddy that reminds you to stay active when you're sitting at your desk",
+        image: DeskBuddy,
+        detailsLink: "/projects/desk-buddy",
+    },
+        {
+        title: "Supporting Mental Health with Social Robots via Conversation",
+        date: "april 2023",
+        description: "Design of Wallie, a social robot that provides emotional support through conversation and interactions",
+        image: SupportingMentalHealth,
+        detailsLink: "https://drive.google.com/file/d/1WQyUWqjA5B7Hixw7mZRUIPiGedlQVcO6/view?usp=sharing",
+    },
+];
 
 const Projects = () => {
     return (
-        <div className="md:w-4/5 p-3 body">
-            {/* <p>My little collection of projects!</p> */}
-            <section className="py-8" id="StreamDesk">
-                <div className="">
-                    <h3 className="text-black text-xl font-semibold mb-1">
-                        <span class="mr-1">StreamDesk</span>
-                    </h3>
-                    <small className="whitespace-nowrap text-neutral-500 text-base font-normal">
-                        August 2023
-                    </small>
-                    <div className="space-y-4">
-                        <div className="grid grid-cols-3 gap-4 md:gap-8 lg:gap-12">
-                            <div className="col-span-3 md:col-span-2">
-                                exploring situated information in livestreams of physical activities
-                            </div>
-                            <div className="col-span-3 md:col-span-1">
-                                <img src={StreamDesk} alt="StreamDesk image" />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <ProjectCard></ProjectCard>
+        <div className="max-w-2xl mx-auto px-6 pt-8">
+            <h2 className="text-xl font-bold text-black mb-6">Projects</h2>
+
+            <div className="space-y-10">
+                {projects.map((proj, i) => (
+                    <ProjectCard key={i} {...proj} />
+                ))}
+            </div>
         </div>
     )
 }

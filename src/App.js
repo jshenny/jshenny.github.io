@@ -7,6 +7,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Research from './components/Research'
 import Footer from './components/Footer';
+import DeskBuddyDetail from './components/DeskBuddyDetail';
 import React from "react";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           {/* <Route path='/about' element={<About />} /> */}
           <Route path='research' element={<Research/>}></Route>
           <Route path='/projects' element={<Projects />} />
+          <Route path='/projects/desk-buddy' element={<DeskBuddyDetail />} />
         </Routes>
       </main>
       <Footer />

@@ -1,27 +1,32 @@
 import React from "react";
 
-const ProjectCard = (projectName) => {
+const ProjectCard = ({ title, date, description, image, detailsLink }) => {
     return (
-        <section className="py-8" id="StreamDesk">
-            <div className="">
-                <h3 className="text-black text-xl font-semibold mb-1">
-                    <span class="mr-1">StreamDesk</span>
-                </h3>
-                <small className="whitespace-nowrap text-neutral-500 text-base font-normal">
-                    August 2023
-                </small>
-                <div className="space-y-4">
-                    <div className="grid grid-cols-3 gap-4 md:gap-8 lg:gap-12">
-                        <div className="col-span-3 md:col-span-2">
-                            exploring situated information in livestreams of physical activities
-                        </div>
-                        <div className="col-span-3 md:col-span-1">
-                            <img src={projectName} alt={`${projectName} image`} />
-                        </div>
-                    </div>
+        <div className="grid grid-cols-5 gap-6">
+            <div className="col-span-2">
+                <div className="w-full aspect-[3/2] bg-gray-200">
+                    {image && (
+                        <img src={image} alt={`${title} image`} className="w-full h-full object-cover" />
+                    )}
                 </div>
             </div>
-        </section>
+            <div className="col-span-3">
+                <h3 className="text-black text-base font-semibold mb-1">
+                    {title}
+                </h3>
+                <p className="italic text-sm text-gray-700 mb-2">
+                    {date}
+                </p>
+                <p className="text-sm text-gray-800 mb-2">
+                    {description}
+                </p>
+                 <p className="text-sm text-gray-800">
+                    <a href={detailsLink} target="_blank" className="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500">
+                        Details
+                    </a>
+                </p>
+            </div>
+        </div>
     )
 }
 

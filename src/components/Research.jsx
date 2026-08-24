@@ -29,7 +29,7 @@ const Research = () => {
         <div className="max-w-2xl mx-auto px-6 pt-8">
             <h2 className="text-xl font-bold text-black mb-4">Publications</h2>
             <p className="text-sm text-gray-800 mb-6">
-                See my full CV <a href="#" className="underline">here!</a>
+                See my full CV <a target="_blank" href="https://drive.google.com/file/d/1diN5KoVgf--1HybDCabWnxzNy3__ZDRq/view?usp=sharing" className="underline">here!</a>
             </p>
 
             <div className="space-y-10">

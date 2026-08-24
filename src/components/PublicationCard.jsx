@@ -21,7 +21,7 @@ const PublicationCard = ({ title, authors, description, image, formatLabel, form
                     {description}
                 </p>
                 <p className="text-sm text-gray-800">
-                    <a href={formatLink} className="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500">{formatLabel}</a> | {venue}
+                    <a href={formatLink} target="_blank" className="underline decoration-gray-300 underline-offset-2 hover:decoration-gray-500">{formatLabel}</a> | {venue}
                 </p>
             </div>
         </div>
