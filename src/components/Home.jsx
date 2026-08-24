@@ -6,32 +6,21 @@ import {Link} from "react-router-dom";
 
 const Home = () => {
     return (
-        <div className="flex flex-col justify-center h-full">
+        <div className="max-w-2xl mx-auto px-6 pt-12">
             <div className="body">
                 <img className="w-[200px] md:w-[200px] my-4" src={ProfilePic} alt="Profile Pic"/>
-                <h1 className="text-3xl">hi, i'm jane!</h1>
-                <p className="py-4">a developer, designer and artist </p>
+                {/* <h1 className="text-3xl">hi, i'm jane!</h1> */}
+                <p className="py-4">Hello I’m Jane! I am an human-computer interaction researcher interested in creativity support tools and artist communities, particularly in visual arts. </p>
+                    
+                <p className="py-4"> I recently graduated from the University of Calgary with a Master's in Computer Science, advised by Dr. Lora Oehlberg, where I also completed my undergraduate degree.
+                    During my studies, I served as a Teaching Assistant for Human-Computer Interaction, interned as a UX/UI Designer at Mastercard, and interned as a Software Developer at Morgan Stanley.
+                </p>
+                    
+                <p className="py-4"> Beyond research, I enjoy reading, playing games, and making art. Recently, I've gotten into plein air painting — getting outside and capturing scenes in the outdoors. </p>
+
+                <p>You can reach me at jshen019@gmail.com.</p>
             </div>
-            {/* <div className="py-24">
-                <h1 className="text-2xl py-6">featured works</h1>
-                <div className="flex flex-row gap-2 flex-wrap justify-between">
-                    <div className="flex flex-col w-[300px] md:w-[44%] mb-6">
-                        <a href=""></a>
-                        <img className="w-full card mb-5" src={StreamDesk} alt="StreamDesk"/>
-                        <a href="" target="_blank" class="font-extrabold text-lg">Stream Desk</a>
-                        <p className="text-gray-600">aug 2023</p>
-                        <p>exploring situated information in livestreams of physical activities</p>
-                    </div>
-                    <div className="flex flex-col w-[300px] md:w-[44%] mb-6">
-                        <a href=""></a>
-                        <img className="w-full card mb-5" src={DeskBuddy} alt="DeskBuddy"/>
-                        <a href="" target="_blank" class="font-extrabold text-lg">Desk Buddy</a>
-                        <p className="text-gray-600">april 2023</p>
-                        <p>a buddy that reminds you to stay active when you're sitting at your desk</p>
-                    </div>
-                    <Link to="/projects"> see all projects → </Link>
-                </div>
-            </div> */}
+            {/* ... featured works section unchanged ... */}
         </div>
     )
 }
