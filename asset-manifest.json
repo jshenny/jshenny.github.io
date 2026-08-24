@@ -1,19 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.42e06de8.css",
-    "main.js": "/static/js/main.2607a43e.js",
+    "main.css": "/static/css/main.27ab66eb.css",
+    "main.js": "/static/js/main.f88243eb.js",
     "static/js/787.4a51508e.chunk.js": "/static/js/787.4a51508e.chunk.js",
+    "static/media/SustainingCreativity.png": "/static/media/SustainingCreativity.ca50d41cb575e4e6acc2.png",
+    "static/media/BuildingOutDesignFiction.png": "/static/media/BuildingOutDesignFiction.0bd61a789e47952b614d.png",
+    "static/media/HomePicture.jpg": "/static/media/HomePicture.5969267f58f03d9c7728.jpg",
+    "static/media/tunnelMountainPainting.jpg": "/static/media/tunnelMountainPainting.4d5e69599dd6e674f70a.jpg",
+    "static/media/persimmonPainting.jpg": "/static/media/persimmonPainting.7f8f4fb0a5bde7691767.jpg",
     "static/media/StreamDesk.jpg": "/static/media/StreamDesk.e61ad57b3d43d16f0391.jpg",
     "static/media/me.jpg": "/static/media/me.7826ee277ec9d0c6b629.jpg",
+    "static/media/ProfilePic.png": "/static/media/ProfilePic.053ef667154f5117f1ac.png",
+    "static/media/SupportingMentalHealth.png": "/static/media/SupportingMentalHealth.67812e11a100e931626a.png",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.e89cb19905e7db5591b0.ttf",
+    "static/media/StreamProjections.png": "/static/media/StreamProjections.40e4538609aecce25a74.png",
     "static/media/DeskBuddy.jpg": "/static/media/DeskBuddy.2c727681060b28b1a1ee.jpg",
+    "static/media/colinPainting.jpg": "/static/media/colinPainting.7f23e71e8d5accae4f9f.jpg",
     "index.html": "/index.html",
-    "main.42e06de8.css.map": "/static/css/main.42e06de8.css.map",
-    "main.2607a43e.js.map": "/static/js/main.2607a43e.js.map",
+    "main.27ab66eb.css.map": "/static/css/main.27ab66eb.css.map",
+    "main.f88243eb.js.map": "/static/js/main.f88243eb.js.map",
     "787.4a51508e.chunk.js.map": "/static/js/787.4a51508e.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.42e06de8.css",
-    "static/js/main.2607a43e.js"
+    "static/css/main.27ab66eb.css",
+    "static/js/main.f88243eb.js"
   ]
 }
