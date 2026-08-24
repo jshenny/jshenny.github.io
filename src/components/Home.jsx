@@ -13,11 +13,11 @@ const Home = () => {
                 {/* <h1 className="text-3xl">hi, i'm jane!</h1> */}
                 <p className="py-4">Hi, I’m Jane! I'm a human-computer interaction researcher interested in creativity support tools and artist communities, particularly in visual arts. </p>
                     
-                <p className="py-4"> I recently graduated from the University of Calgary with a Master's in Computer Science, advised by Dr. Lora Oehlberg, where I also completed my undergraduate degree.
-                    During my studies, I served as a Teaching Assistant for the Human-Computer Interaction course, interned as a UX/UI Designer at Mastercard, and interned as a Software Developer at Morgan Stanley.
+                <p className="py-4"> I recently graduated from the University of Calgary with a Master's in Computer Science, advised by Dr. Lora Oehlberg. Previously, 
+                    I served as a Teaching Assistant for courses on Human-Computer Interaction, interned as a UX/UI Designer at Mastercard, and interned as a Software Developer at Morgan Stanley.
                 </p>
                     
-                <p className="py-4"> Beyond research, I enjoy reading, playing games, and making art. Recently, I've gotten into plein air painting — it's super fun getting outside and capturing scenes outdoors. </p>
+                <p className="py-4"> Beyond research, I enjoy reading, playing video games, and making art. Recently, I've gotten into plein air painting — it's super fun getting outside and capturing scenes outdoors. </p>
 
                 <p>You can reach me at <b>jshen019 at gmail dot com</b>.</p>
             </div>
