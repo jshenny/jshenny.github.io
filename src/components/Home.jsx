@@ -19,7 +19,7 @@ const Home = () => {
                     
                 <p className="py-4"> Beyond research, I enjoy reading, playing video games, and making art. Recently, I've gotten into plein air painting — it's super fun getting outside and capturing scenes outdoors. </p>
 
-                <p>You can reach me at <b>jshen019 at gmail dot com</b>.</p>
+                <p>You can reach me at <b>jshen019[at]gmail[dot]com</b>.</p>
             </div>
             {/* ... featured works section unchanged ... */}
         </div>
