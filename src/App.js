@@ -9,6 +9,7 @@ import Research from './components/Research'
 import Footer from './components/Footer';
 import DeskBuddyDetail from './components/DeskBuddyDetail';
 import Art from './components/Art'
+import TransitHubDetail from './components/TransitHubDetail';
 import React from "react";
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route path='/research' element={<Research/>}></Route>
           <Route path='/projects' element={<Projects />} />
           <Route path='/projects/desk-buddy' element={<DeskBuddyDetail />} />
+          <Route path='/projects/transit-hub' element={<TransitHubDetail />} />
           <Route path='/art' element={<Art/>} />
         </Routes>
       </main>

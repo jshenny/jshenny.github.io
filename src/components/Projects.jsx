@@ -4,6 +4,7 @@ import StreamDesk from "../assets/images/StreamDesk.jpg"
 import DeskBuddy from "../assets/images/DeskBuddy.jpg"
 import StreamProjections from "../assets/images/StreamProjections.png"
 import SupportingMentalHealth from "../assets/images/SupportingMentalHealth.png"
+import TransitHub from "../assets/images/TransitHub.jpg"
 
 const projects = [
     {
@@ -27,12 +28,19 @@ const projects = [
         image: DeskBuddy,
         detailsLink: "/projects/desk-buddy",
     },
-        {
+    {
         title: "Supporting Mental Health with Social Robots via Conversation",
         date: "april 2023",
         description: "Design of Wallie, a social robot that provides emotional support through conversation and interactions",
         image: SupportingMentalHealth,
         detailsLink: "https://drive.google.com/file/d/1WQyUWqjA5B7Hixw7mZRUIPiGedlQVcO6/view?usp=sharing",
+    },
+    {
+        title: "Transit Hub",
+        date: "september 2022",
+        description: "A prototype for a Calgary Ticketing App",
+        image: TransitHub,
+        detailsLink: "/projects/transit-hub",
     },
 ];
 
